@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 75%;
+}
+h1 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+label, select, input, button {
+    margin-bottom: 10px;
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>Temperature Converter</b></h1>
+        <label for="conversionType">Select Conversion Type:</label>
+        <select id="conversionType">
+            <option value="1">Fahrenheit to Celsius</option>
+            <option value="2">Fahrenheit to Kelvin</option>
+            <option value="3">Celsius to Fahrenheit</option>
+            <option value="4">Celsius to Kelvin</option>
+            <option value="5">Kelvin to Fahrenheit</option>
+            <option value="6">Kelvin to Celsius</option>
+        </select>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+        <button id="convertBtn">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
